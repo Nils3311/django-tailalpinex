@@ -15,4 +15,4 @@ The packages are organized with [poetry](https://python-poetry.org). For instruc
 2. After that you can start the tailwind-watcher with `poetry run python manage.py tailwind start`
 3. In a second terminal run the Django server with `poetry run python manage.py runserver`
 
-Open `http://127.0.0.1:8000/htmx` to see it working :)
+Open [`http://127.0.0.1:8000/htmx`](http://127.0.0.1:8000/htmx) to see it working :)
