@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div x-data="{ 'open': false}"
+         class="text-white grid place-content-center h-screen text-center text-xl bg-gradient-to-br from-gray-800 to-black">
+        <p>Hello</p>
+        <a href="https://www.djangoproject.com/" class="select-none text-6xl font-extrabold tracking-tight">django</a>
+        <p>+</p>
+        <a href="https://tailwindcss.com/"
+           class="select-none hover:rotate-3 hover:scale-125 transition-all bg-clip-text text-transparent from-indigo-400 to-yellow-400 bg-gradient-to-r text-6xl">tailwindcss</a>
+        <p>+</p>
+        <div @click="open = !open"
+             class="select-none relative pt-2 text-6xl font-bold tracking-wide text-gray-500 cursor-pointer">Alpine<span class="text-gray-200">.</span>js
+            <a href="https://alpinejs.dev/" x-cloak @click.outside="open = false" x-show="open"
+               class="text-white text-lg rotate-[12deg] text-3xl absolute top-2 font-light italic -right-16 underline underline-offset-4 decoration-[#77c1d2]">read more</a>
+        </div>
+        <p>+</p>
+        <a href="https://htmx.org/" class="relative select-none pt-2 text-6xl font-bold">&#60;<span
+                class="text-[#3D72D8]">/</span>&#62; htm<span
+                class="text-[#3D72D8]">x</span>
+            <p hx-get="{% url 'index_htmx' %}" hx-swap="innerHTML" hx-trigger="load, every 1s"
+               class="absolute -right-12 -bottom-2 text-sm font-normal"></p>
+        </a>
+{% endblock %}
