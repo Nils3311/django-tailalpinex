@@ -1,6 +1,7 @@
 
 # django tailapinex  
-<img width="843" alt="django+tailwindcss+alpine.js+htmx" src="https://user-images.githubusercontent.com/30228894/188502183-ab29497b-7020-43e4-94e3-c014dce5fde7.png">
+<img width="1070" alt="django+tailwindcss+alpine.js+htmx" src="https://user-images.githubusercontent.com/30228894/188502285-d2c5d44b-8729-4aa0-bbe1-4e1ebc623ff3.png">
+
 
 This project is a template for django projects with the use of:
 * [django](https://www.djangoproject.com)
