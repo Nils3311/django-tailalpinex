@@ -10,6 +10,7 @@ Django = "^4.1"
 django-tailwind = "^3.4.0"
 django-widget-tweaks = "^1.4.12"
 django-htmx = "^1.12.2"
+django-on-heroku = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
