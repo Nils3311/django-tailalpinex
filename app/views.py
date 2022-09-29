@@ -11,6 +11,6 @@ def index_htmx(request):
     if request.htmx:
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
-        return render(request, "app/example_htmx.html", {'time': current_time })
+        return render(request, "app/example_htmx.html", {'time': current_time})
     else:
         return HttpResponseNotFound()
